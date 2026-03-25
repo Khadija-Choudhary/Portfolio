@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khadija Choudhary | Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+/* General */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Normal text */
+p, a, span {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h5 {
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(45deg, #6c63ff, #4facfe);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a.brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.navbar a.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 400;
+}
+.navbar a.nav-link:hover {
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #6c63ff, #4facfe);
+    color: white;
+    text-align: center;
+    padding: 150px 20px 120px 20px;
+}
+.hero h1 {
+    font-size: 56px;
+    margin: 0 0 10px 0;
+}
+.hero p {
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #6c63ff;
+    margin: 60px 0 40px;
+    position: relative;
+}
+.section-title i {
+    margin-right: 10px;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #4facfe;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* Sections */
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    opacity: 0; 
+    transform: translateX(-50px);
+    animation: slideIn 1s forwards;
+}
+.cards:nth-child(even) {
+    transform: translateX(50px);
+}
+
+/* Card */
+.card {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+    max-width: 500px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Bigger card headings */
+.card h5 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Animation */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Footer */
+footer {
+    background: #6c63ff;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.95rem;
+    margin-top: 40px;
+}
+
+/* Contact spacing */
+#contact {
+    margin-bottom: 40px;
+}
+
+/* Icons */
+.icon-text {
+    margin-left: 10px;
+}
+
+/* Responsive */
+.navbar .nav-links {
+    display: flex;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navbar .nav-links a.nav-link {
+        margin: 5px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="#" class="brand">Khadija Choudhary</a>
+    <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Khadija Choudhary</h1>
+    <p>Computer Science Student</p>
+</div>
+
+<div class="section" id="about">
+    <h2 class="section-title"><i class="fa-solid fa-user"></i> About Me</h2>
+    <div class="cards">
+        <div class="card">
+            <p>I am a passionate Computer Science student at University of Sargodha, currently in my 2nd semester. I achieved a GPA of 3.85 in my first semester, reflecting my strong academic performance and commitment to excellence.</p>
+            <p>I have a deep interest in programming and continuously strive to learn new technologies. My goal is to become a professional software developer and contribute to the tech industry by building efficient and user-friendly applications.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="education">
+    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+    <div class="cards">
+        <div class="card">
+            <h5>BS Computer Science</h5>
+            <p>University of Sargodha</p>
+            <p>2nd Semester</p>
+        </div>
+        <div class="card">
+            <h5>FSc Pre-Engineering</h5>
+            <p>Punjab Group of Colleges Sargodha</p>
+        </div>
+        <div class="card">
+            <h5>Matric (Science)</h5>
+            <p>Dar-e-Arqam School Sargodha</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="skills">
+    <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Skills</h2>
+    <div class="cards">
+        <div class="card">
+            <h5>Technical Skills</h5>
+            <p>HTML, CSS, Bootstrap, JavaScript, Python, PHP, WordPress, Canva, MS Office</p>
+        </div>
+        <div class="card">
+            <h5>Soft Skills</h5>
+            <p>Communication, Teamwork, Problem Solving, Convincing Skills</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="projects">
+    <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+    <div class="cards">
+        <div class="card">
+            <h5>To-Do List Application</h5>
+            <p><strong>Description:</strong> Web-based app to manage daily tasks efficiently.</p>
+            <p><strong>Role:</strong> Frontend Developer</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <p>Web-based app to manage daily tasks.</p>
+        </div>
+        <div class="card">
+            <h5>Calculator Application</h5>
+            <p><strong>Description:</strong> Basic calculator for arithmetic operations.</p>
+            <p><strong>Role:</strong> Developer</p>
+            <p><strong>Technologies:</strong> JavaScript</p>
+            <p>Basic calculator for arithmetic operations.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="contact">
+    <h2 class="section-title"><i class="fa-solid fa-envelope"></i> Contact</h2>
+    <div class="cards">
+        <div class="card">
+            <p>Email: khadijachoudhary07@gmail.com</p>
+            <p>Phone: 0370-9477495</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Khadija Choudhary | Portfolio</p>
+</footer>
+
+</body>
+</html> 
